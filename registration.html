@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.6.3-web/css/all.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Sell Items - OnWare</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+
+.myrows{
+  border: 3px solid green;
+  padding: 5px;
+}
+.mycols{
+  border: 3px solid red;
+}
+.mycontainer{
+  background-color: aqua;
+}
+#topHeader{
+  border-bottom: 1px solid #ebebeb;
+}
+#topHeader a{
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 0.89rem;
+}
+.container-fluid{
+  padding-left: 0;
+  padding-right: 0;
+}
+nav ul li a {
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+.full-footer{
+  background-color: #243c4f;
+  
+}
+.top-footer p{
+  color: white;
+}
+.top-footer a{
+  color: white;
+  font-weight: 600;
+}
+.top-footer h3{
+  color: white;
+}
+.bottom-footer{
+  background-color: #031b2e;
+}
+.bottom-footer p{
+  color: white;
+}
+
+.top-hero-section{
+background-color: #3498db;
+color: white;
+}
+.top-hero-section a{
+  color: white;
+  font-weight: 600;
+}
+.qualities-img{
+  width:200px;
+}
+.requirements-section{
+  background-color: #004d80;
+  color: white;
+}
+.breadcrumbs-section{
+  background-color: #e9ecef;
+}
+.clients-section{
+  background-color: #f0f0f0;
+}
+.contact-form{
+    background: skyblue;
+    margin-top: 10%;
+    margin-bottom: 5%; 
+    width: 70%;
+}
+.contact-form .form-control{
+    border-radius:1rem;
+}
+.contact-image{
+    text-align: center;
+}
+.contact-image img{
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+
+}
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -1%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #0f0c0c;
+    font-family: sans-serif;
+    color: #34435e;
+}
+.contact-form .btnContact {
+    width: 100%;
+    border: none;
+    border-radius: 1rem;
+    padding:  1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+
+
+
+
+    </style>
+    <link rel="icon" href="logo1.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="logo1.jpeg">
+
+    <title>Upload Product</title>
+  </head>
+  <body>
+    <header>
+      <div class="p-1" id="topHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-right">
+              <a class="p-1" href="tel:+919090909090"> <i class="fas fa-phone"></i> +(91) 9090909090 </a>
+              <a class="p-1" href="mailto:OnWaree@gmail.com  "> <i class="fas fa-envelope"></i>
+                OnWare@gmail.com </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="bottomHeader">
+        <div class="container-fluid">
+          <nav class="navbar navbar-dark navbar-expand-md" style="background-color:#004d80;">
+            <a class="navbar-brand" href="">
+              <img src="logo.png" width="100px" alt="">
+            </a>
+            <button data-toggle="collapse" data-target="#navbarToggler" type="button" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" href="#">Services</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item fas fa-car" href="#"> Cars-Accesories</a>
+                    <a class="dropdown-item fas fa-motorcycle" href="#">  Bikes-Parts</a>
+                    <a class="dropdown-item fas fa-truck" href="#"> Truck-parts</a>
+                    <a class="dropdown-item fas fa-bus" href="#"> Bus-parts</a>
+                    <a class="dropdown-item fas fa-subway" href="#"> Automobile-parts</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item fas fa-truck-monster" href="#"> Other-parts</a>
+                  </div>
+  
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="registration.html">Sell Items</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contactus.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+  
+        </div>
+      </div>
+  
+    </header>
+    <section class="breadcrumbs-section py-2">
+      <div class="container p-1 p-sm-3">
+        <div class="row">
+          <div class="col-12">
+            <h2>Sell Items</h2>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Sell Items</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+  
+    </section>
+    <div class="container contact-form" style="border-radius: 30px;">
+      <div class="contact-image">
+        <img src="logo1.jpeg"  alt=""/>
+      </div>
+      <form method="post" action="upload_script" enctype="multipart/form-data">
+        <h3>Enter the Details</h3>
+          <div class="offset-3 col-sm-6">
+            <div class="form-group">
+              <input type="text" name="firstname" required id="firstName" class="form-control" placeholder="First Name " value="" />
+            </div>
+           
+          </div><div class="offset-3 col-sm-6">
+          <div class="form-group">
+            <input type="text" name="lastname" required id="lastName" class="form-control" placeholder="Last Name " value="" />
+          </div>
+     
+      </div>
+        <div class="offset-3 col-sm-6">
+          <div class="form-group">
+            <input type="email" name="email" required id="email" class="form-control" placeholder="Enter email" value="" />
+          </div>
+  
+          <div class="form-group">
+            <input type="number" name="mobile1" required id="number1" class="form-control" placeholder="Enter Phone Number1" value="" />
+          </div>
+         
+          <div class="form-group">
+            <input type="number" name="mobile2" required id="number2" class="form-control" placeholder="Enter Phone Number 2 " value="" />
+          </div>
+          
+        </div>
+        <div class="offset-3 col-sm-6">
+          <div class="form-group">
+            <textarea name="address" required id="address" class="form-control" placeholder="Enter Address" style="width: 100%; height: 150px;"></textarea>
+          </div>
+          
+        </div>
+        <div class="offset-3 col-sm-6">
+         
+        <div class="col-sm-8">
+          <div class="form-group">
+            <select class="custom-select form-control" name="country" required id="country"  required="">
+              <option value="choose">Select Country</option>
+              <option value="india">India</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <select class="custom-select form-control" name="state" required id="state" required="">
+              <option value="choose">Select State</option>
+              <option value="telangana">AndhraPradesh</option>
+              <option value="telangana">Telangana</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="number" name="zip" required id="zip" class="form-control" placeholder="Enter ZIP" value="" />
+          </div>
+        </div>
+    </div>
+      
+      <div class="form-group">
+        <div class = "row">
+          
+          <div class="offset-3 col-sm-6">
+            <input type="submit" name="btnSubmit" required id="btnSubmit" class="btnContact bg-success" value="Send for Verification" />
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+</body>
+</html>
