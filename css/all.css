@@ -2,7 +2,8 @@
 .fas,
 .far,
 .fal,
-.fab {
+.fab { 
+  
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
