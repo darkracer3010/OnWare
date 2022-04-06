@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
 :root{
-    --blue:#2980b9;
+    --blue:#004d80;
 }
 
 *{
@@ -136,16 +136,6 @@ header .header-2 .dropdown-menu a:hover{
     color:#120e0e;
     
 }
-header .header-2 .icons a{
-    color: #fff;
-    font-size: 2rem;
-    padding: 0 1rem;
-}
-
-header .header-2 .icons a:hover{
-    color:yellow;
-}
-
 header .header-2 #menu{
     font-size: 3rem;
     color:#fff;
@@ -540,6 +530,16 @@ header .header-2.header-active{
     padding: 1rem;
     flex-wrap: wrap;
 }
+header .header-2 .icons a{
+    color: #fff;
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+header .header-2 .icons a:hover{
+    color:yellow;
+}
+
 
 .deal .icons-container .icons{
     flex:1 1 25rem;
@@ -741,7 +741,7 @@ header .header-2.header-active{
 
 }
 .full-footer{
-    background-color: #2980bf;
+    background-color: #243c4f;
     
 }
 .top-footer p{
@@ -755,7 +755,7 @@ header .header-2.header-active{
     color: white;
 }
 .bottom-footer{
-    background-color: #3498db;
+    background-color: #031b2e;
     font-size: 16px;
 
 }
@@ -778,4 +778,20 @@ header .header-2.header-active{
       background-color: #004d80;
       color: white;
 }
-  
+h1:before{
+    content: attr(data-count);
+    color: white;
+    position: absolute;
+    right: 16px;
+    font-size: 15px;
+    text-align: center;
+    top: -12px;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    opacity: 0;
+}
+h1.zero:before{
+    opacity: 1;
+}
