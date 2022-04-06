@@ -7,10 +7,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.min.css">
 	  
     <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="bootstrap/js/popper.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
   
     <link rel="stylesheet" href="css/style1.css">
+<script type="text/javascript">
+    function sendEmail() {
+      
+      var name = document.getElementById("firstName").value;
+      var email = document.getElementById("email").value;
+      var number = document.getElementById("number1").value;
+      var products = document.getElementById("products").value;
+      var country = document.getElementById("country").value;
+      var state = document.getElementById("state").value;
+      var zip = document.getElementById("zip").value;
+      
+      document.write(name);
+			Email.send({
+        Host: "smtp.gmail.com",
+				Username : "onware10@gmail.com",
+				Password : "ONWARE10$",
+				To : "amaansmd9@gmail.com",
+				From : "onware10@gmail.com",
+				Subject : "hello wolrd",
+				Body : `the dealer name - ${name} 
+                Phone number - ${number}
+                email address- ${email}
+                Product deatils- ${products}
+                State- ${state}
+                Pin code- ${zip}
+                Country-${country}`,
+			})
+			.then(function(message){
+				alert("mail sent successfully")
+			});
+		}
+
+
+  </script>
    
     <title>Sell Items - OnWare</title>
     <style>
@@ -432,7 +467,7 @@ color: white;
         <div class = "row">
           
           <div class="offset-3 col-sm-6">
-            <input type="submit" name="btnSubmit" required id="btnSubmit" class="btnContact bg-success" value="Send for Verification" />
+            <input type="submit" name="btnSubmit" required id="btnSubmit" class="btnContact bg-success" value="Send Email" onclick="sendEmail()"/>
           </div>
         </div>
       </div>
