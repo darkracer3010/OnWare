@@ -4,15 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.min.css">
-	  
+    <link rel="stylesheet" href="fontawesome-free-5.6.3-web/css/all.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="bootstrap/js/popper.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
-  
-    <link rel="stylesheet" href="css/style1.css">
-<script type="text/javascript">
+  <script type="text/javascript">
     function sendEmail() {
       
       var name = document.getElementById("firstName").value;
@@ -26,18 +23,18 @@
       document.write(name);
 			Email.send({
         Host: "smtp.gmail.com",
-				Username : "onware10@gmail.com",
-				Password : "ONWARE10$",
-				To : "amaansmd9@gmail.com",
-				From : "onware10@gmail.com",
-				Subject : "hello wolrd",
-				Body : `the dealer name - ${name} 
-                Phone number - ${number}
-                email address- ${email}
-                Product deatils- ${products}
-                State- ${state}
-                Pin code- ${zip}
-                Country-${country}`,
+				Username: "onware121@gmail.com",
+		    Password: "ONWARE121$",
+		    To: 'amaansmd9@gmail.com',
+		    From: "onware121@gmail.com",
+				Subject : "Seller Details",
+				Body : `the dealer name - ${name} <br>
+                Phone number - ${number} <br>
+                email address- ${email} <br>
+                Product deatils- ${products} <br>
+                State- ${state} <br>
+                Pin code- ${zip} <br>
+                Country-${country} <br>`,
 			})
 			.then(function(message){
 				alert("mail sent successfully")
@@ -46,6 +43,8 @@
 
 
   </script>
+  
+    <link rel="stylesheet" href="css/style1.css">
    
     <title>Sell Items - OnWare</title>
     <style>
@@ -154,7 +153,7 @@ header .header-1 .form-container form label:hover{
   color:yellow;
   
 }
- 
+
 header .header-2{
   background-color: #004d80;
 }
@@ -324,11 +323,11 @@ color: white;
 
 
     </style>
-    <link rel="icon" href="images/logo1.jpeg">
+    <link rel="icon" href="logo1.jpeg">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="images/logo1.jpeg">
+    <link rel="shortcut icon" href="logo1.jpeg">
 
     <title>Upload Product</title>
   </head>
@@ -336,57 +335,53 @@ color: white;
     <header>
 
       <div class="header-1">
-
-   
-
-    <div class="form-container offset-6">
-        <form action="">
-            <input type="search" placeholder="search products" id="search" /> 
-            <label for="search" class="fas fa-search"></label>
-        </form>
-    </div>
-
-</div>
-
-<div class="header-2">
-
-    <div id="menu" class="fas fa-bars"></div>
-
-    <nav class="navbar">
-        <ul>
-            <li> <p href="#" class="logo" style="background-color: #004d80;"><img src="images/logo.png" width="60px" height="60px" alt=""></p></li>
-            <li><a href="home.html">home</a></li>
-            <li><a href="#arrival">arrival</a></li>
-            <li><a href="#featured">featured</a></li>
-            <li><a href="#gallery">gallery</a></li>
-            <li><a href="#deal">deal</a></li>
-            <li><a class="active" href="registration.html">Sellers</a></li>
-            <li><a href="aboutus.html">Aboutus</a></li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" href="#">Services</a>
-                <div class="dropdown-menu" style="background-color: #2980b9;">
-                  <a class="dropdown-item fas fa-car" style="color: black;" href="car.html"> Cars-Accesories</a>
-                  <a class="dropdown-item fas fa-motorcycle" style="color: black;" href="#">  Bikes-Parts</a>
-                  <a class="dropdown-item fas fa-truck" style="color: black;" href="#"> Truck-parts</a>
-                  <a class="dropdown-item fas fa-bus" style="color: black;" href="#"> Bus-parts</a>
-                  <a class="dropdown-item fas fa-subway" style="color: black;"href="#"> Automobile-parts</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item fas fa-truck-monster"  style="color: black;"href="#"> Other-parts</a>
-                </div>
-
-              </li>
-              
-            
-        </ul>
-    </nav>
-
-    <div class="icons">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="store1.html" class="fas fa-shopping-cart"></a>
-        <a href="#" class="fas fa-user"></a>
-    </div>
-
-</div>
+      
+         
+      
+          <div class="form-container offset-6">
+              <form action="">
+                  <input type="search" placeholder="search products" id="search" /> 
+                  <label for="search" class="fas fa-search"></label>
+              </form>
+          </div>
+      
+      </div>
+      
+      <div class="header-2">
+      
+          <div id="menu" class="fas fa-bars"></div>
+      
+          <nav class="navbar">
+              <ul>
+                  <li> <p href="#" class="logo" style="background-color: #004d80;"><img src="images/logo.png" width="60px" height="60px" alt=""></p></li>
+                  <li><a  href="index.html">Home</a></li>
+                  <li><a  class="active" href="registration.html">Sellers</a></li>
+                  <li><a href="aboutus.html">Aboutus</a></li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" href="#">Services</a>
+                      <div class="dropdown-menu" style="background-color: #004d80;">
+                        <a class="dropdown-item fas fa-car" style="color: black;" href="car.html"> Cars-Accesories</a>
+                        <a class="dropdown-item fas fa-motorcycle" style="color: black;" href="#">  Bikes-Parts</a>
+                        <a class="dropdown-item fas fa-truck" style="color: black;" href="#"> Truck-parts</a>
+                        <a class="dropdown-item fas fa-bus" style="color: black;" href="#"> Bus-parts</a>
+                        <a class="dropdown-item fas fa-subway" style="color: black;"href="#"> Automobile-parts</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item fas fa-truck-monster"  style="color: black;"href="#"> Other-parts</a>
+                      </div>
+      
+                    </li>
+                    
+                  
+              </ul>
+          </nav>
+      
+          <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-shopping-cart"></a>
+              <a href="#" class="fas fa-user"></a>
+          </div>
+      
+      </div>
       
       </header>
     <section class="breadcrumbs-section py-2">
@@ -405,13 +400,13 @@ color: white;
     </section>
     <div class="container contact-form" style="border-radius: 30px;">
       <div class="contact-image">
-        <img src="images/logo1.jpeg"  alt=""/>
+        <img src="logo1.jpeg"  alt=""/>
       </div>
       <form method="post" action="upload_script" enctype="multipart/form-data">
         <h3>Enter the Details</h3>
           <div class="offset-3 col-sm-6">
             <div class="form-group">
-              <input type="text" name="firstname" required id="firstName" class="form-control" placeholder="First Name " value="" />
+              <input type="text" name="firstname" id="firstName" class="form-control" placeholder="First Name " value="" />
             </div>
            
           </div><div class="offset-3 col-sm-6">
@@ -422,11 +417,11 @@ color: white;
       </div>
         <div class="offset-3 col-sm-6">
           <div class="form-group">
-            <input type="email" name="email" required id="email" class="form-control" placeholder="Enter email" value="" />
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter email" value="" />
           </div>
   
           <div class="form-group">
-            <input type="number" name="mobile1" required id="number1" class="form-control" placeholder="Enter Phone Number1" value="" />
+            <input type="number" name="mobile1" id="number1" class="form-control" placeholder="Enter Phone Number1" value="" />
           </div>
          
           <div class="form-group">
@@ -436,29 +431,31 @@ color: white;
         </div>
         <div class="offset-3 col-sm-6">
           <div class="form-group">
-            <textarea name="address" required id="address" class="form-control" placeholder="Enter Address" style="width: 100%; height: 150px;"></textarea>
+            <textarea name="address" id="products" class="form-control" placeholder="Enter product Details" style="width: 100%; height: 150px;"></textarea>
           </div>
           
+          
         </div>
+      
         <div class="offset-3 col-sm-6">
          
         <div class="col-sm-8">
           <div class="form-group">
-            <select class="custom-select form-control" name="country" required id="country"  required="">
+            <select class="custom-select form-control" name="country"  id="country"  required="">
               <option value="choose">Select Country</option>
               <option value="india">India</option>
             </select>
           </div>
           
           <div class="form-group">
-            <select class="custom-select form-control" name="state" required id="state" required="">
+            <select class="custom-select form-control" name="state"  id="state" required="">
               <option value="choose">Select State</option>
               <option value="telangana">AndhraPradesh</option>
               <option value="telangana">Telangana</option>
             </select>
           </div>
           <div class="form-group">
-            <input type="number" name="zip" required id="zip" class="form-control" placeholder="Enter ZIP" value="" />
+            <input type="number" name="zip" id="zip" class="form-control" placeholder="Enter ZIP" value="" />
           </div>
         </div>
     </div>
@@ -467,7 +464,7 @@ color: white;
         <div class = "row">
           
           <div class="offset-3 col-sm-6">
-            <input type="submit" name="btnSubmit" required id="btnSubmit" class="btnContact bg-success" value="Send Email" onclick="sendEmail()"/>
+            <input type="button" name="btnSubmit" required id="btnSubmit" class="btnContact bg-success" value="Send Email" onclick="sendEmail()" />
           </div>
         </div>
       </div>
