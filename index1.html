@@ -8,78 +8,163 @@
     <link rel="stylesheet" href="fontawesome-free-5.6.3-web/css/all.css">
     <!-- owl carousel css file cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-
-    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
   <script src="bootstrap/js/popper.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
-  
+  <script src="smd.js"></script>
 
 </head>
 <body>
+<script>
+    function sendEmail() {
+    var price=document.getElementById("cart-total-value").innerHTML;
+    var mail=document.getElementById("mail").value;
+    var name=document.getElementById("name").value;
+    if(price ==0){
+        alert("your cart is empty")
+    }
+    else{
+
+    if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail) && /^[A-Za-z]+$/.test(name)){
+        window.alert("order placed");
+          Email.send({
+              Host: "smtp.gmail.com",
+              Username: "onware121@gmail.com",
+		      Password: "ONWARE121$",
+		      To: mail,
+		      From: "onware121@gmail.com",
+              Subject : "Order Placed",
+              Body :`Order Value-${price}
+                     Dear ${name},
+                     ThankYou for placing order, Your order will be delivered in 2 weeks.
+                    ,Team OnWare`,
+          })
+          .then(function(message){
+              alert("mail sent successfully")
+          });
+          Email.send({
+              Host: "smtp.gmail.com",
+              Username: "onware121@gmail.com",
+		      Password: "ONWARE121$",
+		      To: 'amaansmd8@gmail.com',
+		      From: "onware121@gmail.com",
+              Subject : "Order received",
+              Body :`Order Value-${price}
+                     
+                     The Customer ${name} has placed the order.
+                    ,Team OnWare`,
+          })
+          .then(function(message){
+              alert("Contunie shopping")
+          });
+        
+    }
+    else{
+         alert("invalid credentials")
+
+        }
+    }
+}
+</script>
 
 <!-- header section starts  -->
 
 <header>
+    <nav class = "navbar">
+      <div>
+        <a href = "index.html" class = "navbar-brand"><img src="images/logo.png" width="60px" height="60px" alt=""></a>
+      </div>
 
-<div class="header-1">
+        <div class="header-2">
 
-   
+            <div class="navbar1">
+                <ul>
+                    <li><a class="active" href="index.html" style="color: yellow;">home</a></li>
+                    <li><a href="#arrival">arrival</a></li>
+                    <li><a href="#featured">featured</a></li>
+                    <li><a href="#gallery">gallery</a></li>
+                    <li><a href="#deal">deal</a></li>
+                    <li><a href="registration.html">Sellers</a></li>
+                    <li><a href="aboutus.html">Aboutus</a></li>
+                    <li><a href="home1.html">LogOut</a></li>
+                    <!--<li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" href="#">Services</a>
+                        <div class="dropdown-menu" style="background-color: #2980b9;">
+                          <a class="dropdown-item fas fa-car" style="color: black;" href="car.html"> Cars-Accesories</a>
+                          <a class="dropdown-item fas fa-motorcycle" style="color: black;" href="#">  Bikes-Parts</a>
+                          <a class="dropdown-item fas fa-truck" style="color: black;" href="#"> Truck-parts</a>
+                          <a class="dropdown-item fas fa-bus" style="color: black;" href="#"> Bus-parts</a>
+                          <a class="dropdown-item fas fa-subway" style="color: black;"href="#"> Automobile-parts</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item fas fa-truck-monster"  style="color: black;"href="#"> Other-parts</a>
+                        </div>
+        
+                      </li>
+                    -->
+                    
+                </ul>
+            </div>
+        </div>
 
-    <div class="form-container offset-6">
-        <form action="">
-            <input type="search" placeholder="search products" id="search" /> 
-            <label for="search" class="fas fa-search"></label>
-        </form>
-    </div>
-
-</div>
-
-<div class="header-2">
-
-    <div id="menu" class="fas fa-bars"></div>
-
-    <nav class="navbar">
-        <ul>
-            <li> <p href="#" class="logo" style="background-color: #004d80;"><img src="images/logo.png" width="60px" height="60px" alt=""></p></li>
-            <li><a class="active" href="home.html">home</a></li>
-            <li><a href="#arrival">arrival</a></li>
-            <li><a href="#featured">featured</a></li>
-            <li><a href="#gallery">gallery</a></li>
-            <li><a href="#deal">deal</a></li>
-            <li><a href="registration.html">Sellers</a></li>
-            <li><a href="aboutus.html">Aboutus</a></li>
-            <!--<li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" href="#">Services</a>
-                <div class="dropdown-menu" style="background-color: #2980b9;">
-                  <a class="dropdown-item fas fa-car" style="color: black;" href="car.html"> Cars-Accesories</a>
-                  <a class="dropdown-item fas fa-motorcycle" style="color: black;" href="#">  Bikes-Parts</a>
-                  <a class="dropdown-item fas fa-truck" style="color: black;" href="#"> Truck-parts</a>
-                  <a class="dropdown-item fas fa-bus" style="color: black;" href="#"> Bus-parts</a>
-                  <a class="dropdown-item fas fa-subway" style="color: black;"href="#"> Automobile-parts</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item fas fa-truck-monster"  style="color: black;"href="#"> Other-parts</a>
+        <div class = "cart">
+          <button type = "button" id = "cart-btn">
+            <i class = "fas fa-shopping-cart"></i>
+            <span id = "cart-count-info"></span>
+          </button>
+          <div class = "cart-container">
+            <div class = "cart-list">
+              <!-- single item -->
+              <!-- <div class = "cart-item">
+                <img src = "images/armchair.png" alt = "product image">
+                <div class = "cart-item-info">
+                  <h3 class = "cart-item-name">Arm Chair</h3>
+                  <span class = "cart-item-category">Chair</span>
+                  <span class = "cart-item-price">$120.00</span>
                 </div>
 
-              </li>
-            -->
-            
-        </ul>
-    </nav>
-
-    <div class="icons">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="store1.html" class="fas fa-shopping-cart"></a>
-        <a href="#" class="fas fa-user"></a>
-    </div>
-
-</div>
-
+                <button type = "button" class = "cart-item-del-btn">
+                  <i class = "fas fa-times"></i>
+                </button>
+              </div> -->
+              <!-- end of single item  -->
+            </div>
+            <form method="post" action="upload_script" enctype="multipart/form-data">
+            <div class = "form-group py-3">
+                    <input type="text"  style="
+                    border: none;
+                    cursor: pointer;
+                    padding: 15px 24px;
+                    font-size: 24px;" required id="name" placeholder="enter name for Contact"> 
+                </div>
+            <div class = "form-group py-3">
+                <input type="email"  style="
+                border: none;
+                cursor: pointer;
+                padding: 15px 24px;
+                font-size: 24px;" required id="mail" placeholder="enter mail for updates"> 
+            </div>
+            <div class = "form-group cart-total">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="button" value="PlaceOrder" class="bg-bold" style="background-color: #004d80;
+                border: none;
+                cursor: pointer;
+                color: white;
+                padding: 10px 25px;
+                font-size: 16px;"  onclick="sendEmail()"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+              <h3>Total: $</h3>
+              <span id = "cart-total-value"></span>
+              
+            </div>
+            </form>
+          </div>
+        </div>
+      </nav>
 </header>
 
 <!-- header section ends -->
@@ -134,164 +219,29 @@
 
 <!-- arrival section starts  -->
 
-<section class="arrival" id="arrival">
-
-<h1 class="heading"> <span>new arrivals</span> </h1>
-
-<div class="box-container">
-
-    <div class="box">
-        <div class="image">
-            <img src="images/wheel.jpg" alt="">
-        </div>
-        <div class="info">
-            <h3><span class="shop-item-title">Wheel</span></h3>
-            <div class="subInfo">
-                <strong class="price">₹6000<span>₹10000/-</span> </strong>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
+<section class = "products">
+      <div class = "container">
+        <h2>Our Products</h2>
+        <div class = "product-list">
+          <!-- single item -->
+          <!-- <div class = "product-item">
+            <div class = "product-img">
+              <img src = "images/bed.png" alt = "product image">
+              <button type = "button" class = "add-to-cart-btn">
+                <i class = "fas fa-shopping-cart"></i>Add To Cart
+              </button>
             </div>
-        </div>
-        <div class="overlay">
-            <a href="#" style="--i:1;" class="fas fa-heart"></a>
-            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
-            <a href="#" style="--i:3;" class="fas fa-search"></a>
-        </div>
-    </div>
 
-    <div class="box">
-        <div class="image">
-            <img src="images/exchaust pipe.jpg" alt="">
-        </div>
-        <div class="info">
-            <h3><span class="shop-item-title">exchaust pipe</span></h3>
-            <div class="subInfo">
-                <strong class="price">₹1200<span>₹2000/-</span> </strong>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                </div>
+            <div class = "product-content">
+              <h3 class = "product-name">Wooden Bed</h3>
+              <span class = "product-category">Bed</span>
+              <p class = "product-price">$120.00</p>
             </div>
+          </div> -->
+          <!-- end of single item -->
         </div>
-        <div class="overlay">
-            <a href="#" style="--i:1;" class="fas fa-heart"></a>
-            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
-            <a href="#" style="--i:3;" class="fas fa-search"></a>
-        </div>
-    </div>
-
-    <div class="box">
-        <div class="image">
-            <img src="images/dashboard.jpg" alt="">
-        </div>
-        <div class="info">
-            <h3><span class="shop-item-title">dashboard</span></h3>
-            <div class="subInfo">
-                <strong class="price">₹6000<span>₹8000/-</span> </strong>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                </div>
-            </div>
-        </div>
-        <div class="overlay">
-            <a href="#" style="--i:1;" class="fas fa-heart"></a>
-            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
-            <a href="#" style="--i:3;" class="fas fa-search"></a>
-        </div>
-    </div>
-
-    <div class="box">
-        <div class="image">
-            <img src="images/gas tank.jpg" alt="">
-        </div>
-        <div class="info">
-            <h3><span class="shop-item-title">Fuel tank</span></h3>
-            <div class="subInfo">
-                <strong class="price">₹12000<span>₹20000/-</span> </strong>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                </div>
-            </div>
-        </div>
-        <div class="overlay">
-            <a href="#" style="--i:1;" class="fas fa-heart"></a>
-            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
-            <a href="#" style="--i:3;" class="fas fa-search"></a>
-        </div>
-    </div>
-
-    <div class="box">
-        <div class="image">
-            <img src="images/mirrors.jpg" alt="">
-        </div>
-        <div class="info">
-            <h3><span class="shop-item-title">rare-view-mirrors</span></h3>
-            <div class="subInfo">
-                <strong class="price">₹3000<span>₹5000/-</span> </strong>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                </div>
-            </div>
-        </div>
-        <div class="overlay">
-            <a href="#" style="--i:1;" class="fas fa-heart"></a>
-            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
-            <a href="#" style="--i:3;" class="fas fa-search"></a>
-        </div>
-    </div>
-
-    <div class="box">
-        <div class="image">
-            <img src="images/wipers.jpg" alt="">
-        </div>
-        <div class="info">
-            <h3><span class="shop-item-title">wipers</span></h3>
-            <div class="subInfo">
-                <strong class="price">₹1000<span>₹3000/-</span> </strong>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                </div>
-            </div>
-        </div>
-        <div class="overlay">
-            <a href="#" style="--i:1;" class="fas fa-heart"></a>
-            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
-            <a href="#" style="--i:3;" class="fas fa-search"></a>
-        </div>
-    </div>
-
-</div>
-
-</section>
+      </div>
+    </section>
 
 <!-- arrival section ends -->
 
@@ -331,8 +281,7 @@
         </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, at!</p>
         <strong class="price">₹2000-₹5000/- <span>₹7000</span> </strong>
-        <a href="#"><button class="btn btn-primary shop-item-button">buy now</button></a>
-
+       
     </div>
 
 </div>
