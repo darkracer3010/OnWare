@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete Responsive E-Commerce Website Design Tutorial</title>
+    <title>OnWare</title>
+    <link rel="shortcut icon" href="logo1.jpeg">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome-free-5.6.3-web/css/all.css">
     <!-- owl carousel css file cdn link  -->
@@ -17,12 +18,11 @@
     <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
   <script src="bootstrap/js/popper.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
-  <script src="smd.js"></script>
 
 </head>
 <body>
 <script>
-    function sendEmail() {
+function sendEmail() {
     var price=document.getElementById("cart-total-value").innerHTML;
     var mail=document.getElementById("mail").value;
     var name=document.getElementById("name").value;
@@ -56,9 +56,9 @@
 		      To: 'amaansmd8@gmail.com',
 		      From: "onware111@gmail.com",
               Subject : "Order received",
-              Body :`Order Value-${price}
+              Body :`Order Value-${price}<br>
                      
-                     The Customer ${name} has placed the order.
+                     The Customer ${name} has placed the order.<br>
                     ,Team OnWare`,
           })
           .then(function(message){
@@ -72,33 +72,7 @@
         }
     }
 }
-function sendEmail1() {
-    var mail=document.getElementById("mail").value;
-  
-
-    if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)){
-        window.alert("order placed");
-          Email.send({
-              Host: "smtp.gmail.com",
-              Username: "onware111@gmail.com",
-		      Password: "Onware121$",
-		      To: mail,
-		      From: "onware111@gmail.com",
-              Subject : "Order Placed",
-              Body :`Thank you, for subcribing to our website!!.stay tuned for updates.<br> 
-                    ,Team OnWare`,
-          })
-          .then(function(message){
-              alert("mail sent successfully")
-          });
-        
-    }
-    else{
-         alert("invalid credentials")
-
-        }
-
-} 
+ 
 </script>
 
 <!-- header section starts  -->
@@ -114,10 +88,10 @@ function sendEmail1() {
             <div class="navbar1">
                 <ul>
                     <li><a class="active" href="home.html" style="color: yellow;">home</a></li>
-                    <li><a href="#arrival">arrival</a></li>
                     <li><a href="#featured">featured</a></li>
                     <li><a href="#gallery">gallery</a></li>
                     <li><a href="#deal">deal</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li><a href="index.html">LogOut</a></li>
                     <!--<li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" href="#">Services</a>
@@ -183,7 +157,7 @@ function sendEmail1() {
                 color: white;
                 padding: 10px 25px;
                 font-size: 16px;"  onclick="sendEmail()"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
-              <h3>Total: $</h3>
+              <h3>Total: ₹</h3>
               <span id = "cart-total-value"></span>
               
             </div>
@@ -594,13 +568,11 @@ function sendEmail1() {
 <section class="newsletter">
 
     <h1>newsletter</h1>
-    <p>get in touch for latest discounts and updates</p>
-    <form method="post" action="upload_script" enctype="multipart/form-data">
-        <input type="email" id="mail" class="form-group" placeholder="enter your email">
-        <input type="button" class="form-group btn" value="submit" style="border-radius: 30px ;" onclick="sendEmail1()">
-    </form>
+    <p>Get in touch for latest discounts and updates</p>
+    
 
 </section>
+
 
 <!-- newsletter section ends -->
 
@@ -684,8 +656,8 @@ style="background-color:#004d80;"
   <p>
     <a href="#!">Seller</a>
   </p>
-  <p id="arrival">
-    <a href="#arrival">Arrival</a>
+  <p id="#contact">
+    <a href="#contact">Arrival</a>
   </p>
   <p>
     <a href="signup.html">Signup</a>
