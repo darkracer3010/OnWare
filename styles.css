@@ -1363,3 +1363,51 @@ footer > .container{
         grid-template-columns: repeat(4, 1fr);
     }
 }
+.newsletter{
+    background:linear-gradient(var(--blue),var(--blue)), url(../images/deal.jpg) no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding:4rem 1rem;
+    text-align: center;
+}
+
+.newsletter h1{
+    color:#fff;
+    font-size: 4rem;
+}
+
+.newsletter p{
+    color:#fff;
+    font-size: 2rem;
+    padding:1rem 0;
+}
+
+.newsletter form{
+    height:5.5rem;
+    max-width: 60rem;
+    margin:0 auto;
+    padding:0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5rem;
+    background:rgba(0,0,0,.3);
+}
+
+.newsletter form input[type="email"]{
+    height: 100%;
+    width: 80%;
+    padding:0 1rem;
+    outline: none;
+    border:none;
+    background:none;
+    font-size: 2rem;
+    color:#fff;
+}
+
+.newsletter form input[type="submit"]{
+    border-radius: 5rem;
+}
+
