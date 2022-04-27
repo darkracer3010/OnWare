@@ -1,65 +1,65 @@
 [
     {
-        "name" : "brake",
+        "name" : "Brake",
         "category" : "bike",
         "price" : "1000",
         "imgSrc" : "images/brake3.jpg"
     },
     {
-        "name" : "brake",
+        "name" : "Brake",
         "category" : "bike",
         "price" : "2000",
         "imgSrc" : "images/brake4.jpg"
     },
     {
-        "name" : "dashboard",
+        "name" : "Dashboard",
         "category" : "car",
         "price" : "4000",
         "imgSrc" : "images/dashboard.jpg"
     },
     {
-        "name" : "disc brake",
+        "name" : "Disc brake",
         "category" : "bike",
         "price" : "3000",
         "imgSrc" : "images/discbrakes.jpg"
     },
     {
-        "name" : "drum brake",
+        "name" : "Drum brake",
         "category" : "bike",
         "price" : "2000",
         "imgSrc" : "images/drumbrakes.jpg"
     },
     {
-        "name" : "exchaust pipe",
+        "name" : "Exhaust pipe",
         "category" : "Automobiles",
         "price" : "1200",
         "imgSrc" : "images/exchaust pipe.jpg"
     },
     {
-        "name" : "gas tank",
+        "name" : "Gas tank",
         "category" : "truck",
         "price" : "12000",
         "imgSrc" : "images/gas tank.jpg"
     },
     {
-        "name" : "Rare View mirros",
+        "name" : "Rear View mirrors",
         "category" : "Bike and Car",
         "price" : "3000",
         "imgSrc" : "images/mirrors.jpg"
     },
-    { "name" : "tyre",
+    { "name" : "Tyre",
         "category" : "Automobiles",
         "price" : "3000",
         "imgSrc" : "images/tyre.jpg"
     },
     {
-        "name" : "wheel",
+        "name" : "Wheel",
         "category" : "Automobile",
         "price" : "6000",
         "imgSrc" : "images/wheel.jpg"
     },
     {
-        "name" : "wipers",
+        "name" : "Wipers",
         "category" : "Automobile",
         "price" : "1000",
         "imgSrc" : "images/wipers.jpg"
@@ -68,7 +68,7 @@
         "name" : "Bus engine",
         "category" : "Automobile",
         "price" : "1000",
-        "imgSrc" : "images/busengine.png"
+        "imgSrc" : "images/bus engine.png"
     },
     {
         "name" : "Truck tyre",
@@ -98,7 +98,7 @@
         "name" : "Bike engine",
         "category" : "Automobile",
         "price" : "1000",
-        "imgSrc" : "images/bikeengine.jpg"
+        "imgSrc" : "images/bike engine.jpg"
     },
     {
         "name" : "Bus tyre",
@@ -107,10 +107,10 @@
         "imgSrc" : "images/bustyre.jpg"
     },
     {
-        "name" : "truck engine",
+        "name" : "Truck engine",
         "category" : "Automobile",
         "price" : "1000",
-        "imgSrc" : "images/truckengine.jpg"
+        "imgSrc" : "images/trunkengine.jpg"
     },
     {
         "name" : "Suspension",
