@@ -65,57 +65,57 @@
         "imgSrc" : "images/wipers.jpg"
     },
     {
-        "name" : "brake",
-        "category" : "bike",
+        "name" : "Bus engine",
+        "category" : "Automobile",
         "price" : "1000",
-        "imgSrc" : "images/brake3.jpg"
+        "imgSrc" : "images/busengine.png"
     },
     {
-        "name" : "brake",
-        "category" : "bike",
+        "name" : "Truck tyre",
+        "category" : "Automobile",
         "price" : "1000",
-        "imgSrc" : "images/brake3.jpg"
+        "imgSrc" : "images/trucktyre.jpg"
     },
     {
-        "name" : "brake",
-        "category" : "bike",
+        "name" : "Bike tyre",
+        "category" : "Automobile",
         "price" : "1000",
-        "imgSrc" : "images/brake3.jpg"
+        "imgSrc" : "images/biketyre.jpg"
     },
     {
-        "name" : "brake",
-        "category" : "bike",
+        "name" : "Clutch kit",
+        "category" : "Automobile",
         "price" : "1000",
-        "imgSrc" : "images/brake3.jpg"
+        "imgSrc" : "images/clutch.jpg"
     },
     {
-        "name" : "brake",
-        "category" : "bike",
+        "name" : "Cables",
+        "category" : "Automobile",
         "price" : "1000",
-        "imgSrc" : "images/brake3.jpg"
+        "imgSrc" : "images/cables.jpg"
     },
     {
-        "name" : "brake",
-        "category" : "bike",
+        "name" : "Bike engine",
+        "category" : "Automobile",
         "price" : "1000",
-        "imgSrc" : "images/brake3.jpg"
+        "imgSrc" : "images/bikeengine.jpg"
     },
     {
-        "name" : "brake",
-        "category" : "bike",
+        "name" : "Bus tyre",
+        "category" : "Automobile",
         "price" : "1000",
-        "imgSrc" : "images/brake3.jpg"
+        "imgSrc" : "images/bustyre.jpg"
     },
     {
-        "name" : "brake",
-        "category" : "bike",
+        "name" : "truck engine",
+        "category" : "Automobile",
         "price" : "1000",
-        "imgSrc" : "images/brake3.jpg"
+        "imgSrc" : "images/truckengine.jpg"
     },
     {
-        "name" : "brake",
-        "category" : "bike",
+        "name" : "Suspension",
+        "category" : "Automobile",
         "price" : "1000",
-        "imgSrc" : "images/brake3.jpg"
+        "imgSrc" : "images/suspension.jpg"
     }
 ]
