@@ -1364,7 +1364,7 @@ footer > .container{
     }
 }
 .newsletter{
-    background:linear-gradient(var(--blue),var(--blue)), url(../images/deal.jpg) no-repeat;
+    background:linear-gradient(var(--blue),var(--blue)), url(images/deal.jpg) no-repeat;
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
